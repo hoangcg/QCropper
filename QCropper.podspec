@@ -11,7 +11,7 @@ This project aims to provide an image cropping experience like iOS Photos.app.
   s.author           = { 'Chen' => 'qchenqizhi@gmail.com' }
   s.source           = { :git => 'https://github.com/qchenqizhi/QCropper.git', :tag => s.version.to_s }
   s.swift_version = '5.0'
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '10.0'
   s.source_files = 'QCropper/**/*'
   s.resources = ["Assets/*.png"]
   s.frameworks = 'UIKit'
