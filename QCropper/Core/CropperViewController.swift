@@ -295,10 +295,14 @@ open class CropperViewController: UIViewController, Rotatable, StateRestorable, 
     open override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-
-    open override var preferredScreenEdgesDeferringSystemGestures: UIRectEdge {
+    
+    open override func preferredScreenEdgesDeferringSystemGestures() -> UIRectEdge {
         return .top
     }
+    
+//    open override var preferredScreenEdgesDeferringSystemGestures: UIRectEdge {
+//        return .top
+//    }
 
     open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         if !view.size.isEqual(to: size, accuracy: 0.0001) {

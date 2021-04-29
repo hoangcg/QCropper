@@ -99,7 +99,7 @@ public class AspectRatioPicker: UIView {
     lazy var scrollView: UIScrollView = {
         let sv = UIScrollView(frame: self.bounds)
         sv.backgroundColor = .clear
-        sv.decelerationRate = .fast
+        sv.decelerationRate = UIScrollViewDecelerationRateFast
         sv.showsHorizontalScrollIndicator = false
         sv.showsVerticalScrollIndicator = false
         return sv
