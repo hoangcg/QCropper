@@ -139,14 +139,14 @@ open class Overlay: UIView {
             let center = UIBezierPath(rect: cropBox.frame)
             bezierPath.append(center)
         }
-        maskLayer.fillRule = kCAFillRuleEvenOdd
+        maskLayer.fillRule = CAShapeLayerFillRule.evenOdd
 //        maskLayer.fillRule = .evenOdd
         bezierPath.usesEvenOddFillRule = true
 
         if animated {
             let animation = CABasicAnimation(keyPath: "path")
             //animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
             maskLayer.path = bezierPath.cgPath
             animation.duration = 0.25
             maskLayer.add(animation, forKey: animation.keyPath)

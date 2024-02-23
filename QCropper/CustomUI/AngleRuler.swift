@@ -58,7 +58,7 @@ public class AngleRuler: UIControl {
     private lazy var scrollView: UIScrollView = {
         let sv = UIScrollView(frame: self.bounds.insetBy(dx: margin, dy: 0))
         sv.backgroundColor = .clear
-        sv.decelerationRate = UIScrollViewDecelerationRateFast
+        sv.decelerationRate = UIScrollView.DecelerationRate.fast
 //        sv.decelerationRate = .fast
         sv.showsHorizontalScrollIndicator = false
         sv.showsVerticalScrollIndicator = false
